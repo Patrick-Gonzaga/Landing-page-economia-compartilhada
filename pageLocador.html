@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sou locador</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pageLocador.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="headerPrincipal">
+        <a href="./index.html"
+          ><img src="./imgs/Sem Título-1.png" alt="logo cabeçalho"
+        /></a>
+        <nav class="navzin">
+          <a href="./pageLocatario.html" class="navzinLink">
+            <p>Sou locatário</p>
+            <div class="barraLink"></div>
+          </a>
+          <a href="./pageLocador.html" class="navzinLink">
+            <p>Sou locador</p>
+            <div class="barraLink"></div>
+          </a>
+          <a href="#" class="navzinLink">
+            <p>Saiba mais</p>
+            <div class="barraLink"></div>
+          </a>
+        </nav>
+
+        <div class="loginCadastroBox">
+          <a href="#">
+            <div class="loginBox">
+              <p>Login</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="cadastroBox">
+              <p>Cadastro</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="container-menuLocador">
+      <div class="menuLocador">
+      <div><h1 class="queroAlugar" style="color: #00e587;">Quero alugar minhas ferramentas</h1></div>
+      <form action="" class="formLocador">
+        <label for="selectFerramentasLocador">
+          <span class="ferramentasDisponiveis"
+            >Ferramentas disponíveis</span
+          ></label
+        >
+        <select id="selectFerramentasLocador" required>
+          <option selected disabled>Selecione uma Ferramenta</option>
+          <option>Martelo</option>
+          <option>Chave Inglesa</option>
+          <option>Chave Phillips</option>
+          <option>Chave de Fenda</option>
+          <option>Furadeira</option>
+          <option>Parafusadeira</option>
+          <option>Pregos/Parafusos</option>
+          <option>Alicate</option>
+          <option>Pá</option>
+          <option>Esquadro</option>
+          <option>Maquita</option>
+          <option>Ferro de solda</option>
+        </select>
+        <br />
+        <label for="maxTempo"></label>
+          <span class="qualPeriodo">
+            Qual é o periodo maximo que você pode disponibilizar sua ferramenta
+            ?</span></label
+        >
+        <br />
+        <div class="radioTempoMax">
+          <div>
+            <label for="menosDe1Dia">Menos de 1 dia</label>
+            <input type="radio" name="tempoMax" id="menosDe1Dia" />
+          </div>
+          <div>
+            <label for="1Dia">1 dia</label>
+            <input type="radio" name="tempoMax" id="1Dia" />
+          </div>
+          <div>
+            <label for="ate3Dias">Até 3 dias</label>
+            <input type="radio" name="tempoMax" id="ate3Dias" />
+          </div>
+        </div>
+
+        <br />
+        <section class="termosDeUso">
+          <input type="checkbox" name="termsCheckBox" id="terms" required/>
+          <label for="terms" class="textTerms" 
+            ><p>Ao alugar essa ferramenta estou ciente dos termos <br> de uso do sistema
+            de compartilhamento de ferramentas.</p></label
+          >
+        </section>
+        <button class="fimLoc">Quero alugar</button>
+      </form>
+      </div>
+    </section>
+    <footer class="rodape">
+      <div class="boxRodape">
+        <section class="boxSocials">
+          <div class="FB">
+            <a href="#">
+              <img src="./imgs/FB_icon-icons.com_65484.png" class="logoFB" />
+            </a>
+          </div>
+          <div class="Twitter">
+            <a href="#">
+              <img src="./imgs/81725.png" class="logoTwitter" />
+            </a>
+          </div>
+          <div class="logoSiteDiv">
+            <a href="#">
+              <img src="./imgs/Sem Título-1.png" class="logoSite" />
+            </a>
+          </div>
+          <div class="Instagram">
+            <a href="#">
+              <img
+                src="./imgs/5ecec78673e4440004f09e77.png"
+                class="logoInstagram"
+              />
+            </a>
+          </div>
+          <div class="Youtube">
+            <a href="#">
+              <img
+                src="./imgs/YouTube_icon-icons.com_49934.png"
+                class="logoYoutube"
+              />
+            </a>
+          </div>
+        </section>
+        <section class="ISM">
+          <ul>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Marketing</a></li>
+          </ul>
+        </section>
+        <section class="TP">
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </section>
+        <p class="copyright">© 2022 Descomplica</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,591 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+a,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #1a1a1a;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ------------------------Header-------------------- */
+
+.header {
+  background-color: #232426;
+}
+
+.header-principal {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  border-bottom: solid 2px #00e78e;
+}
+
+.logoDisc {
+  max-width: 150px;
+  padding: 18px 0px 18px 15px;
+  flex: 1 1 auto;
+  position: relative;
+  left: 10px;
+}
+
+/* --------- */
+
+.navzin {
+  display: flex;
+  align-items: center;
+}
+.navzin a {
+  margin: 0px 10px;
+}
+.navzin a p {
+  font-size: 1.2em;
+  color: white;
+}
+
+.navzin p::after {
+  content: '';
+  display: block;
+  background-color: #ffffff;
+  width: 100%;
+  height: 2px;
+  margin-top: 5px;
+  opacity: 0;
+}
+
+.navzin a:hover p::after {
+  opacity: 1;
+  transition: 0.3s;
+}
+.navzin a:hover p {
+  color: #00e78e;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+/* ---------- */
+
+.login-cadastro-box {
+  display: flex;
+  align-items: center;
+  padding: 18px 15px 18px 0px;
+}
+.login-cadastro-box a div {
+  margin: 0px 10px;
+  border: solid 2px #00e78e;
+  padding: 8px;
+  border-radius: 10px;
+}
+.login-cadastro-box a div p {
+  font-size: 1.5em;
+  color: white;
+}
+.login-box {
+  display: flex;
+}
+.login-box img {
+  max-width: 25px;
+  margin-right: 10px;
+}
+.login-cadastro-box a:hover .login-box {
+  background-color: #00e78e;
+}
+.login-cadastro-box a:hover .login-box img {
+  filter: invert();
+}
+.login-cadastro-box a:hover .login-box p {
+  color: #232426;
+  font-weight: 500;
+}
+
+/* ---------- */
+
+.cadastro-box {
+  display: flex;
+}
+.cadastro-box img {
+  max-width: 29px;
+  margin-right: 10px;
+}
+.login-cadastro-box a:hover .cadastro-box {
+  background-color: #00e78e;
+}
+.login-cadastro-box a:hover .cadastro-box img {
+  filter: invert();
+}
+.login-cadastro-box a:hover .cadastro-box p {
+  color: #232426;
+  font-weight: 500;
+}
+
+/* ---------------Principal---------------- */
+
+.principal {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.content-main {
+  display: flex;
+  margin: 30px 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* ------------ */
+
+.barra-lateral {
+  background-color: #232426;
+  flex: 1;
+  margin-right: 15px;
+  padding: 20px;
+  max-width: 270px;
+  border-radius: 10px;
+}
+
+.box-ferramentas-disponiveis {
+  border-bottom: #00e78e 1px solid;
+}
+.ferramentas-disponiveis {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0px 5px 10px 5px;
+}
+.ferramentas-lista li::before {
+  content: '';
+  background-color: #00e78e;
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+.ferramentas-lista li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1em;
+}
+.ferramentas-lista li:hover {
+  color: #00e78e;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+.box-ver-mais {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.box-ver-mais button {
+  background-color: transparent;
+  border: solid 3px #00e78e;
+  padding: 7px 18px;
+  border-radius: 30px;
+  color: #00e78e;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* -------- */
+
+.content-main-box {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 400px;
+}
+.content-main-box a div {
+  background-color: #232426;
+  border-radius: 10px;
+}
+.content-main-box a div section figure {
+  max-width: 10%;
+}
+.box-locatario {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.logo-locatario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-locatario figure {
+  margin: 0;
+}
+.logo-locatario {
+  margin-bottom: 15px;
+}
+
+.logo-locatario-text,
+.box-locatario-text,
+.logo-locador-text,
+.box-locador-text {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.logo-locatario-text,
+.logo-locador-text {
+  font-weight: bold;
+  color: #00e78e;
+  font-size: 1.35em;
+}
+
+.box-locador {
+  padding: 15px;
+}
+
+.logo-locador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-locador figure {
+  margin: 0;
+}
+.logo-locador {
+  margin-bottom: 15px;
+}
+
+.content-main-box a:hover .box-locatario {
+  border: #00e78e 2px solid;
+}
+
+.content-main-box a:hover .box-locador {
+  border: #00e78e 2px solid;
+}
+
+/* -----------------Satisfação------------------ */
+
+.text-satisfacao-box {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.text-satisfacao-usuarios {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-satisfacao-usuarios::after {
+  content: '';
+  background-color: #00e78e;
+  display: block;
+  height: 7px;
+  width: 40px;
+  border-radius: 10%;
+}
+
+.text-satisfacao-usuarios::before {
+  content: '';
+  background-color: #00e78e;
+  display: block;
+  height: 7px;
+  width: 40px;
+  border-radius: 10%;
+}
+
+.satisfacao-box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 20px auto;
+  justify-content: space-around;
+}
+
+.satisfacao-pessoa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  border: #00e78e solid 1px;
+  border-radius: 20px;
+  margin: 0 5px 15px 5px;
+}
+
+.img-box-satisfacao {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: #00e78e 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-satisfacao {
+  background-image: url(./imgs/Wilson.jpg);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: 100%;
+}
+.img-satisfacao2 {
+  background-image: url(./imgs/3b10203ac3df64b0dddd100af23e65e87c-20-anne-hathaway.jpg);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: 100%;
+}
+.img-satisfacao3 {
+  background-image: url(./imgs/image.jpg);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: 100%;
+}
+.img-satisfacao4 {
+  background-image: url(./imgs/scarlett-johansson-1.jpg);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: 100%;
+}
+
+.img-filter {
+  filter: saturate(0) blur(1.5px);
+  transition: 0.3s;
+}
+
+.satisfacao-pessoa:hover .img-filter {
+  filter: saturate(1);
+}
+
+.box-text-satisfacao {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.nome-pessoa-satisfacao {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #00e78e;
+  text-align: center;
+}
+
+.comentario-pessoa-satisfacao {
+  font-size: 1.2em;
+  padding: 0px 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* -----------------Footer------------------ */
+.logo-twitter,
+.logo-fb,
+.logo-instagram,
+.logo-youtube {
+  filter: invert();
+}
+
+.rodape {
+  border-top: #00e78e solid 5px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.rodape::before {
+  content: '';
+  z-index: -1;
+  background-image: url(./imgs/tipos-de-condominio.8937275.486ce83b25f6cdfde82ca19cbb20067f.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  filter: saturate(0);
+}
+
+.box-socials {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fb {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border: solid 2px #00e78e;
+  border-radius: 50%;
+}
+.twitter {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border: solid 2px #00e78e;
+  border-radius: 50%;
+}
+.instagram {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border: solid 2px #00e78e;
+  border-radius: 50%;
+}
+.youtube {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border: solid 2px #00e78e;
+  border-radius: 50%;
+}
+.logo-site-div {
+  height: 130px;
+  width: 130px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-site-point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.point1 {
+  background-color: #00e78e;
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  margin-right: -10px;
+}
+.point2 {
+  background-color: #00e78e;
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  margin-left: -10px;
+}
+
+.ISM ul li:nth-of-type(2),
+.ISM ul li:nth-of-type(4) {
+  background-color: #00e78e;
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+
+.ISM ul li a {
+  color: white;
+}
+
+.ISM ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.TP ul li:nth-of-type(2) {
+  background-color: #00e78e;
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+
+.TP ul li a {
+  color: white;
+}
+
+.TP ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyzada {
+  background-color: #00e78e;
+  margin-top: 40px;
+}
+
+.copyzada {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.social-media-button:hover {
+  background-color: #00e78e;
+  transition: 0.3s;
+}
+.social-media-button:hover .social-media-button-filter {
+  filter: brightness(0);
+  transition: 0.3s;
+}
+
+/* ---------------------MEDIA------------------------ */
+
+@media (max-width: 645px) {
+  .barra-lateral {
+    min-width: 200px;
+    max-width: 100vh;
+    margin: 0 0px 15px 0px;
+  }
+  .content-main {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 590px) {
+  .content-main-box {
+    flex-direction: column;
+    min-width: 300px;
+  }
+}
+@media (max-width: 645px) {
+  .barra-lateral {
+    order: 3;
+  }
+  .box-locador {
+    margin-bottom: 15px;
+  }
+}
